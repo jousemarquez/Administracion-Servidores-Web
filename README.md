@@ -57,16 +57,17 @@ Utilizar herramientas como Apache Benchmark (ab) para realizar pruebas de carga 
 ### Se deberá generar documentación que incluya:
 
 #### Capturas de Pantalla: Muestra de la conexión SSH, instalación de Apache, y verificación del estado.
-![Daemons](Screenshot/Screenshot 2023-11-24 at 11.05.57.png)<br>
-![Keygen](Screenshot/Screenshot 2023-11-24 at 11.06.22.png)<br>
-![Conexión](Screenshot/Screenshot 2023-11-24 at 11.06.37.png)<br>
-![Update](Screenshot/Screenshot 2023-11-24 at 11.06.44.png)<br>
-![Actualización](Screenshot/Screenshot 2023-11-24 at 11.06.54.png)<br>
-![Apache2](Screenshot/Screenshot 2023-11-24 at 11.07.10.png)<br>
-![Apache2-Status](Screenshot/Screenshot 2023-11-24 at 11.07.22.png)<br>
-![Ir-A-Carpeta](Screenshot/Screenshot 2023-11-24 at 11.07.31.png)<br>
-![HTMLbase](Screenshot/Screenshot 2023-11-24 at 11.45.10.png)<br>
-![Despliegue-Web](Screenshot/Screenshot 2023-11-24 at 12.03.39.png)<br>
+
+![Daemons](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/01.png?raw=true)
+![Keygen](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/02.png?raw=true)
+![Conecction](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/03.png?raw=true)
+![Update](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/04.png?raw=true)
+![Actualización](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/05.png?raw=true)
+![Apache2](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/07.png?raw=true)
+![Apache2-Status](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/06.png?raw=true)
+![Ir-A-Carpeta](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/08.png?raw=true)
+![HTMLBase](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/09.png?raw=true)
+![Despliegue-Web](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/10.png?raw=true)
 
 #### Archivos de Configuración: Si se realizaron modificaciones en archivos de configuración de Apache.
 AÑADIR CAMBIOS EN EL CONFIG
@@ -77,7 +78,7 @@ AÑADIR CAMBIOS EN EL CONFIG
 - -n 10: Realiza 10 solicitudes en total.
 - -c 5: Mantiene un máximo de 5 conexiones simultáneas.<br>
 
-![Prueba-Carga-Simultánea](Screenshot/Screenshot 2023-11-24 at 12.08.58.png)
+![Prueba-Carga-Simultánea](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/12.png?raw=true)
 
 ### Utilizar la herramienta de benchmarking Wrk para medir el rendimiento del servidor web bajo una carga de trabajo sostenida.
 
@@ -89,7 +90,7 @@ AÑADIR CAMBIOS EN EL CONFIG
   
   sudo apt install wrk
 
-![Prueba-Wrk](Screenshot/Screenshot 2023-11-24 at 12.13.43.png)
+![Prueba-Wrk](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/13.png?raw=true)
 
 ### Comandos útiles para la gestión de un Apache2 en una máquina virtual en Azure
 
