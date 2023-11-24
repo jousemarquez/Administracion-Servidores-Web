@@ -143,6 +143,3 @@ Nota: para ello se debe instalar el navegador de texto Lynx y ajustar la variabl
 Localizar la línea de definición de la variable y cambiar a:
 
     export APACHE_LYNX='usr/bin/lynx'
-
-
-
