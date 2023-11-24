@@ -58,22 +58,36 @@ Utilizar herramientas como Apache Benchmark (ab) para realizar pruebas de carga 
 
 #### Capturas de Pantalla: Muestra de la conexión SSH, instalación de Apache, y verificación del estado.
 
-![Daemons](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/01.png?raw=true)
-![Keygen](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/02.png?raw=true)
-![Conecction](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/03.png?raw=true)
-![Update](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/04.png?raw=true)
-![Actualización](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/05.png?raw=true)
-![Apache2](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/07.png?raw=true)
-![Apache2-Status](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/06.png?raw=true)
-![Ir-A-Carpeta](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/08.png?raw=true)
-![HTMLBase](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/09.png?raw=true)
-![Despliegue-Web](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/10.png?raw=true)
+![Daemons](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/01.png?raw=true)<br>
+![Keygen](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/02.png?raw=true)<br>
+![Conecction](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/03.png?raw=true)<br>
+![Update](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/04.png?raw=true)<br>
+![Actualización](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/05.png?raw=true)<br>
+![Apache2](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/07.png?raw=true)<br>
+![Apache2-Status](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/06.png?raw=true)<br>
+![Ir-A-Carpeta](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/08.png?raw=true)<br>
+![HTMLBase](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/09.png?raw=true)<br>
+![Despliegue-Web](https://github.com/jousemarquez/Administracion-Servidores-Web/blob/master/Screenshots/10.png?raw=true)<br>
 
 #### Archivos de Configuración: Si se realizaron modificaciones en archivos de configuración de Apache.
-AÑADIR CAMBIOS EN EL CONFIG
+
+- **Mostrar estadísticas de uso de recursos:**
+
+Nota: para ello se debe instalar el navegador de texto Lynx y ajustar la variable APACHE_LYNX
+
+    sudo apt-get update
+    sudo apt-get install lynx
+    sudo nano /etc/apache2/envvars
+    export APACHE_LYNX='/usr/bin/lynx'
+
+Localizar la línea de definición de la variable y cambiar a:
+
+    export APACHE_LYNX='usr/bin/lynx'
+
 #### Resultados de Pruebas de Carga: Capturas de pantalla de las pruebas de carga y resultados obtenidos.
 
 ### Pruebas de carga:
+
     ab -n 10 -c 5 http://20.199.83.190:80/html
 - -n 10: Realiza 10 solicitudes en total.
 - -c 5: Mantiene un máximo de 5 conexiones simultáneas.<br>
@@ -130,16 +144,3 @@ sudo tail -f /var/log/apache2/error.log
 - **Lista de módulos cargados:**
   
 apache2ctl -M
-
-- **Mostrar estadísticas de uso de recursos:**
-
-Nota: para ello se debe instalar el navegador de texto Lynx y ajustar la variable APACHE_LYNX
-
-    sudo apt-get update
-    sudo apt-get install lynx
-    sudo nano /etc/apache2/envvars
-    export APACHE_LYNX='/usr/bin/lynx'
-
-Localizar la línea de definición de la variable y cambiar a:
-
-    export APACHE_LYNX='usr/bin/lynx'
